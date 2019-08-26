@@ -4,9 +4,9 @@ import java.io.*;
 
 public class Server 
 { 
-	private Socket		 socket = null; 
+	private Socket socket = null; 
 	private ServerSocket server = null; 
-	private DataInputStream in	 = null; 
+	private DataInputStream in = null; 
 
 	public Server(int port) 
 	{ 
@@ -20,8 +20,7 @@ public class Server
 			socket = server.accept(); 
 			System.out.println("Client accepted"); 
 
-			in = new DataInputStream( 
-				new BufferedInputStream(socket.getInputStream())); 
+			in = new DataInputStream(new BufferedInputStream(socket.getInputStream())); 
 
 			String line = ""; 
 
