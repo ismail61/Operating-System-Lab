@@ -4,9 +4,9 @@ import java.io.*;
 
 public class Client 
 { 
-	private Socket socket		 = null; 
+	private Socket socket = null; 
 	private DataInputStream input = null; 
-	private DataOutputStream out	 = null; 
+	private DataOutputStream out = null; 
 
 	public Client(String address, int port) 
 	{ 
@@ -48,6 +48,6 @@ public class Client
 
 	public static void main(String args[]) 
 	{ 
-		Client client = new Client("127.0.0.1", 6000); 
+		Client client = new Client("127.0.0.1", 9999); 
 	} 
 } 
